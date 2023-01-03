@@ -1,0 +1,48 @@
+.formWrapper {
+  width: 100%;
+
+  form {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 400px;
+
+    .formPart {
+      width: 100%;
+      margin-top: 16px;
+      font-weight: bold;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .label {
+      margin: 4px 0 8px;
+    }
+
+    textarea, input {
+      border: 2px solid #C3DFE2;
+      width: 100%;
+      border-radius: 16px;
+      padding: 8px;
+      min-height: 100px;
+    }
+
+    .submitButton {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      width: auto;
+      align-self: flex-end;
+      margin-top: 24px;
+      transition: .3s;
+      transform: scaleX(1) scaleY(1);
+      cursor: pointer;
+
+      &:hover {
+        transform: scaleX(1.1) scaleY(1.1);
+      }
+    }
+  }
+}

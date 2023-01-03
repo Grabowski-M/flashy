@@ -1,6 +1,8 @@
 import { App } from '../App';
 import { ErrorPage } from '../components/ErrorPage/ErrorPage';
 import { ROUTES_PATHS } from './paths';
+import { NewQuestion } from '../screens/NewQuestion/NewQuestion';
+import { Questions } from '../screens/Questions/Questions';
 
 export const root = {
   path: '/',
@@ -9,11 +11,11 @@ export const root = {
   children: [
     {
       path: ROUTES_PATHS.QUESTIONS,
-      element: <div>questions</div>
+      element: <Questions/>
     },
     {
       path: ROUTES_PATHS.NEW_QUESTION,
-      element: <div>new question</div>
+      element: <NewQuestion/>
     },
     {
       path: ROUTES_PATHS.IMPORT,
