@@ -9,14 +9,15 @@ import '@fontsource/roboto/700.css';
 import { CssBaseline } from '@mui/material';
 import './styles/global.scss';
 import { root } from './routes/root';
+import { StateProvider } from './state/StateContext';
 
 const router = createBrowserRouter([root])
 
 ReactDOM
   .createRoot(document.getElementById('root') as HTMLElement)
   .render(
-    <>
+    <StateProvider>
       <CssBaseline/>
       <RouterProvider router={router}/>
-    </>
+    </StateProvider>
   );
